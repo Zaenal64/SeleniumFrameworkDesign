@@ -1,4 +1,4 @@
-package Gojek.SeleniumFrameworkDesign;
+package Gojek.SeleniumFrameworkDesign.tests;
 
 import java.time.Duration;
 import java.util.Arrays;
