@@ -24,7 +24,18 @@ import PageObjects.ConfirmationPage;
 import PageObjects.LandingPage;
 import PageObjects.ProductCatalogue;
 
-public class SubmitOrderTest extends BaseTest {
+public class ErrorValidationsTest extends BaseTest {
+	
+	@Test
+
+	public void LoginErrorValidation() throws InterruptedException, IOException {
+		ConfirmationPage confirmationPage = new ConfirmationPage(driver);
+		landingPage.loginApplication("anshika@gmail.com", "Imking");
+		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+		String validationError = landingPage.getErrorMessage();
+		Assert.assertEquals(validationError, "Incorrect email or password.");
+		System.out.println(validationError);
+	}
 	
 	@Test
 	public void SubmitOrderTest() throws InterruptedException, IOException {
@@ -38,22 +49,5 @@ public class SubmitOrderTest extends BaseTest {
 		CartPage cartPage = productCatalogue.goToCartPage();
 		Boolean match = cartPage.VerifyProductDisplay(productName);
 	    Assert.assertTrue(match);
-		CheckoutPage checkoutPage = cartPage.goToCheckout();
-		checkoutPage.selectCountry("Indonesia");
-	    ConfirmationPage confirmationPage = checkoutPage.submitOrder();
-	    
-		driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
-		
-		String confirmMessage = confirmationPage.getConfirmationMessage();
-		Thread.sleep(3000);
-		Assert.assertEquals(confirmMessage, "THANKYOU FOR THE ORDER.");
-		System.out.println(confirmMessage);
-		
-		
-		
-		
-		
-		driver.quit();
 	}
-
 }
