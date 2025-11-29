@@ -22,7 +22,7 @@ public class LandingPage extends AbstractComponent{
 	//WebElement userEmails = driver.findElement(By.id("userEmail"));
 	//PageFactory
 	
-	@FindBy(xpath="//input[@type='email']")
+	@FindBy(id="userEmail")
 	WebElement userEmail;
 	
 	@FindBy(css="input[placeholder='enter your passsword']")

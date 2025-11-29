@@ -22,38 +22,44 @@ import PageObjects.CartPage;
 import PageObjects.CheckoutPage;
 import PageObjects.ConfirmationPage;
 import PageObjects.LandingPage;
+import PageObjects.OrderPage;
 import PageObjects.ProductCatalogue;
 
+
 public class SubmitOrderTest extends BaseTest {
+	String productName ="ZARA COAT 3";
 	
 	@Test
 	public void SubmitOrderTest() throws InterruptedException, IOException {
-		String productName ="ZARA COAT 3";
-		
 		
 		ProductCatalogue productCatalogue = landingPage.loginApplication("testjenal@mail.com", "@19oKtober");
 
 		List<WebElement>products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(productName);
 		CartPage cartPage = productCatalogue.goToCartPage();
+		
 		Boolean match = cartPage.VerifyProductDisplay(productName);
 	    Assert.assertTrue(match);
 		CheckoutPage checkoutPage = cartPage.goToCheckout();
 		checkoutPage.selectCountry("Indonesia");
 	    ConfirmationPage confirmationPage = checkoutPage.submitOrder();
-	    
-		driver.findElement(By.xpath("//a[normalize-space()='Place Order']")).click();
 		
 		String confirmMessage = confirmationPage.getConfirmationMessage();
 		Thread.sleep(3000);
 		Assert.assertEquals(confirmMessage, "THANKYOU FOR THE ORDER.");
 		System.out.println(confirmMessage);
 		
-		
-		
-		
-		
-		driver.quit();
+
 	}
+	
+	@Test
+	public void OrderHistoryTest()
+	{
+		//"ZARA COAT 3";
+		ProductCatalogue productCatalogue = landingPage.loginApplication("testjenal@mail.com", "@19oKtober");
+		OrderPage ordersPage = productCatalogue.goToOrdersPage();
+		Assert.assertTrue(ordersPage.VerifyOrderDisplay(productName));
+		
+    }
 
 }

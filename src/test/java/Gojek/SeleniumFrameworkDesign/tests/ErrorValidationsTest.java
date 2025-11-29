@@ -26,8 +26,7 @@ import PageObjects.ProductCatalogue;
 
 public class ErrorValidationsTest extends BaseTest {
 	
-	@Test
-
+	@Test(groups = {"ErrorHandling"})
 	public void LoginErrorValidation() throws InterruptedException, IOException {
 		ConfirmationPage confirmationPage = new ConfirmationPage(driver);
 		landingPage.loginApplication("anshika@gmail.com", "Imking");
