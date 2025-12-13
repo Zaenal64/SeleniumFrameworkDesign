@@ -1,30 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-29T13:18:06 WIB" name="Suite" finished-at="2025-11-29T13:18:11 WIB" duration-ms="5154">
+  <suite started-at="2025-12-13T15:34:21 WIB" name="Suite" finished-at="2025-12-13T15:34:50 WIB" duration-ms="29095">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4e50c791]" name="LoginErrorValidation" class="Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4f4c4b1a]" name="LoginErrorValidation" class="Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest"/>
       </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrderTest(java.util.HashMap)[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest@2eea88a1]" name="submitOrderTest" class="Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2025-11-29T13:18:06 WIB" name="Submit Order Test" finished-at="2025-11-29T13:18:06 WIB" duration-ms="13">
-    </test> <!-- Submit Order Test -->
-    <test started-at="2025-11-29T13:18:06 WIB" name="Error Validations Test" finished-at="2025-11-29T13:18:11 WIB" duration-ms="5154">
+    <test started-at="2025-12-13T15:34:21 WIB" name="Error Validations Test" finished-at="2025-12-13T15:34:41 WIB" duration-ms="19578">
       <class name="Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4e50c791]" started-at="2025-11-29T13:18:06 WIB" name="launchApplication" finished-at="2025-11-29T13:18:10 WIB" duration-ms="4231" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4f4c4b1a]" started-at="2025-12-13T15:34:21 WIB" name="launchApplication" finished-at="2025-12-13T15:34:27 WIB" duration-ms="6394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4e50c791]" started-at="2025-11-29T13:18:10 WIB" name="LoginErrorValidation" finished-at="2025-11-29T13:18:11 WIB" duration-ms="643" status="PASS">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4f4c4b1a]" started-at="2025-12-13T15:34:27 WIB" name="LoginErrorValidation" finished-at="2025-12-13T15:34:29 WIB" duration-ms="1116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4e50c791]" started-at="2025-11-29T13:18:11 WIB" name="tearDown" finished-at="2025-11-29T13:18:11 WIB" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4f4c4b1a]" started-at="2025-12-13T15:34:29 WIB" name="tearDown" finished-at="2025-12-13T15:34:29 WIB" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4f4c4b1a]" started-at="2025-12-13T15:34:29 WIB" name="launchApplication" finished-at="2025-12-13T15:34:38 WIB" duration-ms="9077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="SubmitOrderTest()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4f4c4b1a]" started-at="2025-12-13T15:34:38 WIB" name="SubmitOrderTest" finished-at="2025-12-13T15:34:40 WIB" duration-ms="2578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest@4f4c4b1a]" started-at="2025-12-13T15:34:40 WIB" name="tearDown" finished-at="2025-12-13T15:34:41 WIB" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest -->
     </test> <!-- Error Validations Test -->
+    <test started-at="2025-12-13T15:34:21 WIB" name="Submit Order" finished-at="2025-12-13T15:34:50 WIB" duration-ms="29095">
+      <class name="Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest@2eea88a1]" started-at="2025-12-13T15:34:21 WIB" name="launchApplication" finished-at="2025-12-13T15:34:24 WIB" duration-ms="3129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest@2eea88a1]" started-at="2025-12-13T15:34:24 WIB" name="OrderHistoryTest" finished-at="2025-12-13T15:34:25 WIB" duration-ms="1313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest@2eea88a1]" started-at="2025-12-13T15:34:25 WIB" name="tearDown" finished-at="2025-12-13T15:34:26 WIB" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest@2eea88a1]" started-at="2025-12-13T15:34:26 WIB" name="launchApplication" finished-at="2025-12-13T15:34:28 WIB" duration-ms="2377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrderTest(java.util.HashMap)[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest@2eea88a1]" started-at="2025-12-13T15:34:28 WIB" name="submitOrderTest" data-provider="getData" finished-at="2025-12-13T15:34:39 WIB" duration-ms="10477" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .col-lg-4 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ZAENAL\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52453}, goog:processID: 8468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52453/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad70f73cfbd03a2ed734e46c9ed33419]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .col-lg-4 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ZAENAL\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52453}, goog:processID: 8468, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52453/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad70f73cfbd03a2ed734e46c9ed33419
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at main.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:49)
+at PageObjects.ProductCatalogue.getProductList(ProductCatalogue.java:35)
+at Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest.submitOrderTest(SubmitOrderTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest@2eea88a1]" started-at="2025-12-13T15:34:39 WIB" name="tearDown" finished-at="2025-12-13T15:34:41 WIB" duration-ms="1809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest@2eea88a1]" started-at="2025-12-13T15:34:41 WIB" name="launchApplication" finished-at="2025-12-13T15:34:44 WIB" duration-ms="2711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrderTest(java.util.HashMap)[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest@2eea88a1]" started-at="2025-12-13T15:34:44 WIB" name="submitOrderTest" data-provider="getData" finished-at="2025-12-13T15:34:50 WIB" duration-ms="6405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=@19oKtober, product=ZARA COAT 3, email=testjenal@mail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest@2eea88a1]" started-at="2025-12-13T15:34:50 WIB" name="tearDown" finished-at="2025-12-13T15:34:50 WIB" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order -->
   </suite> <!-- Suite -->
 </testng-results>

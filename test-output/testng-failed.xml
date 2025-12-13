@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Error Validations Test(failed)">
+  <listeners>
+    <listener class-name="Gojek.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Submit Order(failed)">
     <classes>
-      <class name="Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest">
+      <class name="Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest">
         <methods>
           <include name="launchApplication"/>
-          <include name="SubmitOrderTest"/>
           <include name="tearDown"/>
+          <include name="submitOrderTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Gojek.SeleniumFrameworkDesign.tests.ErrorValidationsTest -->
+      </class> <!-- Gojek.SeleniumFrameworkDesign.tests.SubmitOrderTest -->
     </classes>
-  </test> <!-- Error Validations Test(failed) -->
+  </test> <!-- Submit Order(failed) -->
 </suite> <!-- Failed suite [Suite] -->
